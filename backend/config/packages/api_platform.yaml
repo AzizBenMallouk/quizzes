@@ -1,0 +1,20 @@
+api_platform:
+    title: 'Quizzes API'
+    version: '1.0.0'
+    formats:
+        jsonld: ['application/ld+json']
+        json: ['application/json']
+        html: ['text/html']
+    docs_formats:
+        jsonopenapi: ['application/vnd.openapi+json']
+        html: ['text/html']
+    defaults:
+        stateless: true
+        cache_headers:
+            vary: ['Content-Type', 'Authorization', 'Origin']
+        extra_properties:
+            standard_put: true
+            rfc_7807_compliant_errors: true
+    graphql:
+        enabled: true
+        graphql_playground: true
